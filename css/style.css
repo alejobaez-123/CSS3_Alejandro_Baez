@@ -1,0 +1,254 @@
+			
+     		*
+	    	{
+				margin:0;
+				padding:0;
+				font-family:'Dancing';
+
+		    }
+			@font-face{
+				font-family:'Dancing';
+				src:url('../fuentes/DancingScript-Regular.otf');
+			}
+			body{
+				background-color:#02010a;
+				width:100%;
+				margin:auto;
+			}
+			#contenido{
+				width:900px;
+				margin:auto;
+			}
+			header{
+			
+				width:100%;
+				margin:auto;
+				height:110px;
+				background-color:#5b7989;
+				border-radius:10px 10px 0 0;
+			}
+			header h1{
+			    padding-top:30px;
+			    margin-left:20px;
+				color:#FFFFFF;
+				text-shadow:2px 2px 2px #02010a;
+			}
+			header .navegador{
+				width:300px;
+				margin-top:-25px;
+				float:right;
+			}
+			.navegador ul{
+				width:100%; 
+			}
+			.navegador ul li{
+				display:inline;
+			}
+			.navegador ul li a{
+				color:white;
+				padding-left:15px; 
+			}
+			a[name^="inicio"]{
+				text-decoration:none;
+			}
+			section{
+			    width:100%;
+				margin:auto;
+				background-color: #82c3a6;
+			}
+			#imagen1{
+				width:80%;
+				margin:auto;
+			}
+			#imagen1 img{
+				box-shadow:2px 2px 2px #02010a;
+			    margin-top:30px;
+				margin-bottom:30px;
+				width:100%;
+			}
+			.columnas{
+				width:100%;
+				display:flex;
+				display:-webkit-flex;
+				display:-moz-flex;
+				display:-o-flex;
+				flex-flow: row wrap;
+				-webkit-flex-flow: row wrap;
+				-moz-flex-flow: row wrap;				
+				-o-flex-flow: row wrap;
+				margin:auto;
+				padding-top:40px;
+				background-color:#d5c75f;
+				border-radius:1px;
+			}
+			.columnas div{
+				min-width:250px;
+				margin:auto;
+			}
+			#izquierda{
+				width:42%;
+			    text-align:center;
+				margin-bottom:40px;
+			}
+			#izquierda img{
+				border:solid 1px  #02010a;
+				box-shadow:2px 2px 1px #000000;
+				width:100%;
+				transition-duration:.9s;
+				-webkit-transition-duration:.9s;
+				-moz-transition-duration:.9s;
+				-o-transition-duration:.9s;
+			}
+			#izquierda img:hover{
+			    border:solid 2px #00000;
+				box-shadow:2px 2px 10px #82c3a6; 
+				transform:rotate(10deg);
+				-webkit-transform:rotate(10deg);
+				-moz-transform:rotate(10deg);
+				-o-transform:rotate(10deg);
+			}
+			#derecha{
+				width:42%;
+				text-align:center;
+				margin-bottom:40px;
+			}
+			#derecha img{
+			    border:solid 1px #000000;
+				width:100%;
+				box-shadow:2px 2px 1px  #02010a;
+				transition-duration:.9s;
+				-webkit-transition-duration:.9s;
+				-moz-transition-duration:.9s;
+				-o-transition-duration:.9s;
+			}
+			#derecha img:hover{
+			border:solid 2px #000000;
+				box-shadow:2px 2px 10px #82c3a6; 
+				transform:translate(20px,-5px);
+				-webkit-transform:translate(20px,-5px);
+				-moz-transform:translate(20px,-5px);
+				-o-transform:translate(20px,-5px);
+			}
+			footer{
+				background-color: #C6d5c5;
+				border-radius:0 0 10px 10px;
+			}
+			#contenedor{
+				width:95%;
+				margin:auto;
+				padding-top:30px;
+				padding-bottom:30px;
+				display:flex;
+				display:-webkit-flex;
+				display:-moz-flex;
+				display:-o-flex;
+				flex-flow: row wrap;
+				-webkit-flex-flow: row wrap;
+				-moz-flex-flow: row wrap;				
+				-o-flex-flow: row wrap;
+			}
+			#contenedor div{
+				min-width:200px;
+				margin:20px auto;
+			}
+			#contacto{
+				width:20%;
+			}
+			#politicas{
+				width:20%;
+			}
+			#redes{
+				width:20%;
+			}
+			#redes ul{
+				list-style:none;
+			}
+			#derechos{
+				width:20%;
+			}
+			@media (min-width:420px) and (max-width:1023px){
+				header h1{
+					font-size:1.0em;
+					margin-left:5%;
+				}
+				header .navegador{
+					width:120px;
+					font-size:.7em;
+				}
+				header .navegador ul li{
+
+				} 
+				header .navegador ul li a{
+					padding:0;
+				}
+				#contenido{
+					width:80%;
+				}
+				#derecha{
+					width:40%;
+				}
+				#izquierda{
+					width:40%;
+				}
+				#contenedor{
+					width:90%;
+					margin:auto;
+				}
+				#contacto{
+					width:50%;
+				}
+				#politicas{
+					width:50%;
+				}
+				#redes{
+					width:50%;
+				}
+				#derechos{
+					width:50%;
+				}
+			}
+			@media(max-width:419px){
+				header{
+					height:150px;;
+				}
+				header h1{
+					margin:0;
+					padding:0;
+					text-align:center;
+				}
+				header .navegador{
+					width:100%;
+					margin:0;
+					padding-top:5px;
+					 clear: both;
+					text-align:center;
+				}
+				#contenido{
+					width:95%;
+					height:auto;
+				}
+				#derecha{
+					width:80%;
+				}
+				#izquierda{
+					width:80%;
+				}
+				#contenedor{
+					width:80%;
+				}
+				#contacto{
+				width:10%;
+				}
+				#politicas{
+					width:10%;
+				}
+				#redes{
+					width:10%;
+				}
+				#redes ul{
+					list-style:none;
+				}
+				#derechos{
+					width:10%;
+				}
+			}
