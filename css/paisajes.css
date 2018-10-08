@@ -1,0 +1,226 @@
+					
+     		*
+	    	{
+				margin:0;
+				padding:0;
+				font-family:'Dancing';
+
+		    }
+			@font-face{
+				font-family:'Dancing';
+				src:url('../fuentes/DancingScript-Regular.otf');
+			}
+			body{
+				background-color:#02010a;
+				width:100%;
+				margin:auto;
+			}
+			#contenido{
+				width:900px;
+				margin:auto;
+			}
+			header{
+				animation-name:slidein;
+				animation-duration:1s;
+				width:100%;
+				margin:auto;
+				height:110px;
+				background-color:#5b7989;
+				border-radius:10px 10px 0 0;
+			}
+			header h1{
+			    padding-top:30px;
+			    margin-left:20px;
+				color:#FFFFFF;
+				text-shadow:2px 2px 2px #02010a;
+			}
+			header .navegador{
+				width:300px;
+				margin-top:-25px;
+				float:right;
+			}
+			.navegador ul{
+				width:100%; 
+						
+			}
+			.navegador ul li{
+				display:inline;
+			}
+			.navegador ul li a{
+				color:white;
+				padding-left:15px; 
+			}
+			a[name^="inicio"]{
+				text-decoration:none;
+			}
+			section{
+			    width:100%;
+				margin:auto;
+				background-color: #d5c75f;
+			}
+			#contenido2{
+				width:90%;
+				margin:auto;
+				display:flex;
+				display:-webkit-flex;
+				display:-moz-flex;
+				display:-o-flex;
+				flex-flow:row wrap;
+				-webkit-flex-flow:row wrap;
+				-moz-flex-flow:row wrap;
+				-o-flex-flow:row wrap;
+				padding-bottom:20px;
+			}
+			#contenido2 div{
+				padding-top:20px;
+			}
+	
+			div > img{
+				width:100%;
+			}
+			#foto1{
+				filter: blur(10px);
+				width:28%;
+				margin:auto;
+			}
+			#foto2{
+				filter:grayscale(100%);
+				width:28%;
+				margin:auto;
+			}
+			#foto3{
+			
+			filter:sepia(90%);
+				width:28%;
+				margin:auto;
+			}
+			#foto4{
+				filter:grayscale(100%);
+				width:28%;
+				margin:auto;
+			}
+			#foto5{
+				width:28%;
+				margin:auto;
+			}
+			#foto6{
+				filter:grayscale(100%);
+				width:28%;
+				margin:auto;
+			}
+			
+			footer{
+				background-color: #C6d5c5;
+				border-radius:0 0 10px 10px;
+			}
+			#contenedor{
+				width:95%;
+				margin:auto;
+				padding-top:30px;
+				padding-bottom:30px;
+				display:flex;
+				display:-webkit-flex;
+				display:-moz-flex;
+				display:-o-flex;
+				flex-flow: row wrap;
+				-webkit-flex-flow: row wrap;
+				-moz-flex-flow: row wrap;				
+				-o-flex-flow: row wrap;
+			}
+			#contenedor div{
+				min-width:200px;
+				margin:20px auto;
+			}
+			#contacto{
+				width:20%;
+			}
+			#politicas{
+				width:20%;
+			}
+			#redes{
+				width:20%;
+			}
+			#redes ul{
+				list-style:none;
+			}
+			#derechos{
+				width:20%;
+			}
+			@media (min-width:420px) and (max-width:1023px){
+				header h1{
+					font-size:1.0em;
+					margin-left:5%;
+				}
+				header .navegador{
+					width:120px;
+					font-size:.7em;
+				}
+				header .navegador ul li{
+
+				} 
+				header .navegador ul li a{
+					padding:0;
+				}
+				#contenido{
+					width:80%;
+				}
+				#foto1, #foto2, #foto3, #foto4, #foto5, #foto6{
+					width:45%;
+					margin-left:5%;
+				}
+			}
+			@media(max-width:419px){
+				header{
+					height:150px;
+				}
+				header h1{
+					margin:0;
+					padding:0;
+					font-size:2.2em;
+					text-align:center;
+				}
+				header .navegador{
+					width:100%;
+					margin:0;
+					padding-top:5px;
+					 clear: both;
+					text-align:center;
+				}
+				#contenido{
+					width:95%;
+					height:auto;
+				}
+				#foto1, #foto2, #foto3, #foto4, #foto5, #foto6{
+					width:80%;
+				}
+				#contenedor{
+					width:90%;
+				}
+				#contacto{
+				width:10%;
+				}
+				#politicas{
+					width:10%;
+				}
+				#redes{
+					width:10%;
+				}
+				#redes ul{
+					list-style:none;
+				}
+				#derechos{
+					width:10%;
+				}
+			}
+			@keyframes slidein{
+				0%{
+					margin-top:150%;
+				}
+				60%{
+					margin-top:-5%;
+				}
+				100%{
+					margin-top:0%;
+				}
+			}
+			
